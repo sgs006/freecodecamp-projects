@@ -1,0 +1,72 @@
+
+@import 'https://fonts.googleapis.com/css?family=Lato:400,700';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ***Begin Header Styles*** */
+#header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: yellow;
+    position: fixed;
+    width: 100%;
+}
+
+    #nav-bar{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .nav-link{
+        margin: .5em;
+        font-size: 20px;
+        text-decoration: none;
+        display:flex;
+        align-items: center;
+    } 
+
+    .nav-link:hover{
+        color: red;
+    }
+
+    img {
+        height: 100px;
+        width: 100px;
+    }
+/* ***End Header Styles*** */
+
+/* ***Begin Form Hero*** */
+#hero{
+    padding-top: 10em;
+    margin: 4em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; 
+    justify-content: center;
+    width: 100%;
+}
+input[type="email"]{
+    max-width: 275px;
+    width: 100%;
+    margin: 1em;
+}
+input[type="submit"]{
+    max-width: 125px;
+    width: 100%;
+}
+
+/* ***End Form Hero*** */
+
+/* ***Begin Features Section*** */
+
+
+
+/* ***End Features Section*** */
+
+
