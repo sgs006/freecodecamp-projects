@@ -7,6 +7,13 @@
   box-sizing: border-box;
 }
 
+.container{
+max-width: 1000px;
+width: 80%;
+margin: 0 auto;
+border: 2px solid black;
+}
+
 /* ***Begin Header Styles*** */
 #header{
     display: flex;
@@ -15,6 +22,7 @@
     background-color: yellow;
     position: fixed;
     width: 100%;
+    top: 0;
 }
 
     #nav-bar{
@@ -37,12 +45,26 @@
     img {
         height: 100px;
         width: 100px;
+
+        
     }
+    @media(max-width:450px){
+       img{ margin-top: 15px;
+        width: 30%;
+        margin: 0 auto;
+    }
+    #nav-bar{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+}
 /* ***End Header Styles*** */
 
 /* ***Begin Form Hero*** */
-#hero{
-    padding-top: 10em;
+
+#hero {
+    padding-top: 8em;
     margin: 4em;
     display: flex;
     flex-direction: column;
@@ -51,12 +73,14 @@
     justify-content: center;
     width: 100%;
 }
-input[type="email"]{
+
+input[type="email"] {
     max-width: 275px;
     width: 100%;
     margin: 1em;
 }
-input[type="submit"]{
+
+input[type="submit"] {
     max-width: 125px;
     width: 100%;
 }
@@ -64,9 +88,123 @@ input[type="submit"]{
 /* ***End Form Hero*** */
 
 /* ***Begin Features Section*** */
+#features{
+    margin-bottom: 2em;
+}
 
+.grid{
+   display: flex;
+}
 
+.icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 125px;
+    width: 20vw;
+}
+
+.description{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left; 
+    width: 80vw;  
+}
 
 /* ***End Features Section*** */
 
+/* ***Begin How-It-Works Section*** */
+#how-it-works {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    background-color: lightgray;
+    margin-bottom: 2em;
+   
+}
 
+#how-it-works h3{
+    width: 100%;
+    text-align: center;
+    margin: 1.2em;
+    font-size: 2em;
+}
+
+iframe{
+    max-width: 560px;
+    width: 100%; 
+    margin-bottom: 2em;
+}
+
+/* ***End How-It-Works Section*** */
+
+/* ***Begin Pricing Section*** */
+
+#pricing{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+
+.top-div{
+    background-color: lightgrey;
+    margin-bottom: .5em;
+    height: 2em;
+    text-transform: uppercase;
+    font-weight: 700;
+    
+}
+
+.good, .better, .best {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    width: calc(100%  / 3);
+    border: 1px solid black;
+    margin: 10px;
+    text-align: center;
+}
+
+#pricing ul{
+    list-style-type:none;
+    margin: .5em;
+}
+
+.btn{
+    background-color: yellow;
+    width: 80px;
+    margin: 1em;
+}
+
+
+
+/* ***End Pricing Section*** */
+
+/* ***Begin Footer Section*** */
+footer {
+    margin-top: 30px;
+    background-color: #ddd;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+footer ul{
+    display: flex;
+    justify-content: space-between;
+    list-style-type:none;
+    margin-bottom: 5px;
+    
+}
+footer ul li {
+    padding: 0 10px;
+
+}
+
+
+/* ***End Footer Section*** */
