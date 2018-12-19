@@ -229,18 +229,18 @@ iframe{
    .good, .better, .best {
        width: 80%;
    }
-   
+}
 
 /* ***End Pricing Section*** */
 
 /* ***Begin Footer Section*** */
 footer {
-    margin-top: 30px;
-    background-color: #ddd;
-    padding: 20px;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    margin-top: 30px;
+    padding: 20px;
+    margin-top: 50px;
 }
 
 footer ul{
@@ -252,7 +252,10 @@ footer ul{
 }
 footer ul li {
     padding: 0 10px;
+}
 
+a{
+    color: white;
 }
 
 
