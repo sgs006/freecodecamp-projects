@@ -7,11 +7,16 @@
   box-sizing: border-box;
 }
 
+body{
+    background-color: #1d1e22;
+    color: white;
+}
+
 .container{
 max-width: 1000px;
+background-color: #393f4d;
 width: 80%;
 margin: 0 auto;
-border: 2px solid black;
 }
 
 /* ***Begin Header Styles*** */
@@ -19,7 +24,7 @@ border: 2px solid black;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    background-color: yellow;
+    background-color: #feda6a;
     position: fixed;
     width: 100%;
     top: 0;
@@ -64,20 +69,23 @@ border: 2px solid black;
 /* ***Begin Form Hero*** */
 
 #hero {
-    padding-top: 8em;
-    margin: 4em;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center; 
     justify-content: center;
+    margin-top: 100px;
     width: 100%;
+    height: 300px;
+    font-weight: 700;
+    font-size: 2em;
 }
 
 input[type="email"] {
     max-width: 275px;
     width: 100%;
-    margin: 1em;
+    height: 3em;
+    margin: 2em;
 }
 
 input[type="submit"] {
@@ -85,11 +93,19 @@ input[type="submit"] {
     width: 100%;
 }
 
+@media(max-width:450px){
+    #hero{
+        font-size: 1em;
+        margin-top: 120px;
+    }
+}
+
 /* ***End Form Hero*** */
 
 /* ***Begin Features Section*** */
 #features{
     margin-bottom: 2em;
+
 }
 
 .grid{
@@ -108,9 +124,17 @@ input[type="submit"] {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    text-align: left; 
-    width: 80vw;  
+    width: 80vw; 
+    font-size: 1.2em; 
+}
+
+@media(max-width:450px){
+    .icon{
+        display:none;
+    }
+    .description{
+        margin: 15px;
+    }
 }
 
 /* ***End Features Section*** */
@@ -121,7 +145,6 @@ input[type="submit"] {
     flex-wrap: wrap;
     justify-content: center;
     align-content: center;
-    background-color: lightgray;
     margin-bottom: 2em;
    
 }
@@ -139,6 +162,12 @@ iframe{
     margin-bottom: 2em;
 }
 
+@media(max-width:450px){
+    #how-it-works h3 {
+        font-size: 1.2em;
+    }
+}
+
 /* ***End How-It-Works Section*** */
 
 /* ***Begin Pricing Section*** */
@@ -146,26 +175,35 @@ iframe{
 #pricing{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    
+    justify-content: center; 
+    align-items: center;   
+}
+
+#pricing h3{
+    margin: 15px 0;
+    font-size: 1.2em;
 }
 
 .top-div{
-    background-color: lightgrey;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    width: 100%;
+    background-color: #1d1e22;
     margin-bottom: .5em;
-    height: 2em;
+    height: 3em;
     text-transform: uppercase;
-    font-weight: 700;
+    font-weight: 900;
     
 }
 
 .good, .better, .best {
     display: flex;
     flex-direction: column;
-    align-content: center;
+    align-items: center;
     width: calc(100%  / 3);
-    border: 1px solid black;
-    margin: 10px;
+    border: 2px solid #feda6a;
+    margin: 10px ;
     text-align: center;
 }
 
@@ -173,14 +211,25 @@ iframe{
     list-style-type:none;
     margin: .5em;
 }
-
+#pricing ul li{
+    padding: 5px 0;
+}
 .btn{
-    background-color: yellow;
-    width: 80px;
+    background-color: #feda6a;
     margin: 1em;
+    border: none;
+    padding: 5px 15px;
 }
 
-
+@media(max-width:550px){
+   #pricing{ 
+    display: flex;
+    flex-direction: column;
+   }  
+   .good, .better, .best {
+       width: 80%;
+   }
+   
 
 /* ***End Pricing Section*** */
 
